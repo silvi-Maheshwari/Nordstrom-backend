@@ -10,7 +10,7 @@ app.use(cors());
 app.use('/user',userRouter)
 app.use('/product',productrouter)
 const uri=process.env.MONGO_URI
-const port=process.env.port || 3000
+const port=process.env.port || 8080
 console.log(uri)
 console.log(port)
 const connectdb=()=>{
