@@ -8,5 +8,5 @@ services:
     startCommand: npm start   # Command to start your app
     healthCheckPath: /       # Health check path
     autoDeploy: true          # Enable auto-deployment
-    regions:
-      - oregon               # Specify your region (e.g., oregon, frankfurt, etc.)
+    regions: frankfurt
+                    # Specify your region (e.g., oregon, frankfurt, etc.)
