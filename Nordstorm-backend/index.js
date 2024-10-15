@@ -15,7 +15,12 @@ console.log(uri)
 console.log(port)
 const connectdb=()=>{
     try{
-    mongoose.connect(uri)
+    mongoose.connect(uri,{
+        
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+          
+    })
     console.log('database is connected')
     }
     catch(err){
