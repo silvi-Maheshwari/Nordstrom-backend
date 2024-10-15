@@ -1,6 +1,8 @@
 const secretkey=process.env.secretkey
 console.log(secretkey)
+require('dotenv').config();
 const authmiddleware=(roles)=>(req,res,next)=>{
+    
     var jwt = require('jsonwebtoken');
     // console.log("header",req.headers.authorization)
     let token=req.headers.authorization.split(" ")[1]
